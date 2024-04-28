@@ -58,3 +58,24 @@ console.dir (wave)
         slide_sound.play (PropPlaneStart.mp3)
     }
 </script>
+
+<script>
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "sounds/rail_slide.mp3"
+    
+    const circle_element = document.getElementById ("circle_id")
+    circle_element.onpointerover = (interactive1.png) => {
+        circle_element.src = "img/interactive9.png"
+    }
+    circle_element.onpointerout = (interactive9.png) => {
+        circle_element.src = "img/interactive1.png"
+    }
+    circle_element.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+    circle_element.onpointerdown = () => {
+        circle_element.src = "img/hex.png"
+        slide_sound.play ()
+        setTimeout (() => { circle_element.src = "img/cir.png" }, 2000)
+    }
