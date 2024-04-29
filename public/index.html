@@ -19,7 +19,7 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img id="wave" src="img/icon1final.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="wave" src="img/icon1final.png" height="200" width="200" onclick="playsound('img/iconsfx1.mp3')"/></div>
             <div class="image-container"><img id="train" src="img/icon2final.png" height="200" width="200"/></div>
             <div class="image-container"><img id="bike" src="img/icon3final.png" height="200" width="200"/></div>
         </div>
@@ -49,13 +49,6 @@
     document.getElementById ("wave").onpointerout = () => {
         document.getElementById ("wave").src = "img/icon1final.png"
     }
-
-    const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/iconsfx1.mp3"
-
-    document.getElementById ("wave").onpointerdown = () => {
-        slide_sound.play ()
-    }
 </script>
 
 <script>
@@ -65,13 +58,6 @@
     }
     document.getElementById ("train").onpointerout = () => {
         document.getElementById ("train").src = "img/icon2final.png"
-    }
-    
-    const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/iconsfx2.mp3"
-
-    document.getElementById ("train").onpointerdown = () => {
-        slide_sound.play ()
     }
 </script>
 
@@ -83,13 +69,6 @@
     document.getElementById ("bike").onpointerout = () => {
         document.getElementById ("bike").src = "img/icon3final.png"
     }
-
-    const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/iconsfx3.mp3"
-
-    document.getElementById ("bike").onpointerdown = () => {
-        slide_sound.play ()
-    }
 </script>
 
 <script>
@@ -100,13 +79,6 @@
     document.getElementById ("plane").onpointerout = () => {
         document.getElementById ("plane").src = "img/icon4final.png"
     }
-
-    const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/iconsfx4.mp3"
-
-    document.getElementById ("plane").onpointerdown = () => {
-        slide_sound.play ()
-    }
 </script>
 
 <script>
@@ -116,13 +88,6 @@
     }
     document.getElementById ("bird").onpointerout = () => {
         document.getElementById ("bird").src = "img/icon5final.png"
-    }
-
-    const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/iconsfx5.mp3"
-
-    document.getElementById ("bird").onpointerdown = () => {
-        slide_sound.play ()
     }
 </script>
 
