@@ -20,20 +20,20 @@
 
         <div class="row">
             <div class="image-container"><img id="wave" src="img/icon1final.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/tri.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/squ.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="train" src="img/icon2final.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="bike" src="img/icon3final.png" height="200" width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/hex.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/rec.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="plane" src="img/icon4final.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="bird" src="img/icon5final.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="ship" src="img/icon6final.png" height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="throwing" src="img/icon7final.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="kicking" src="img/icon8final.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="tank" src="img/icon9final.png" height="200" width="200"/></div>
         </div>
         
     </body>
@@ -44,7 +44,7 @@
 <script>
     const wave_element = document.getElementById ("wave")
     document.getElementById ("wave").onpointerover = () => {
-        document.getElementById ("wave").src = "img/iterate1.png"
+        document.getElementById ("wave").src = "img/interactive1.png"
     }
     document.getElementById ("wave").onpointerout = () => {
         document.getElementById ("wave").src = "img/icon1final.png"
@@ -54,6 +54,142 @@
     slide_sound.src = "img/PropPlaneStart.mp3"
 
     document.getElementById ("wave").onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const wave_element = document.getElementById ("train")
+    document.getElementById ("train").onpointerover = () => {
+        document.getElementById ("train").src = "img/interactive2.png"
+    }
+    document.getElementById ("train").onpointerout = () => {
+        document.getElementById ("train").src = "img/icon2final.png"
+    }
+
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "img/PropPlaneStart.mp3"
+
+    document.getElementById ("train").onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const wave_element = document.getElementById ("bike")
+    document.getElementById ("bike").onpointerover = () => {
+        document.getElementById ("bike").src = "img/interactive3.png"
+    }
+    document.getElementById ("bike").onpointerout = () => {
+        document.getElementById ("bike").src = "img/icon3final.png"
+    }
+
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "img/PropPlaneStart.mp3"
+
+    document.getElementById ("bike").onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const wave_element = document.getElementById ("plane")
+    document.getElementById ("plane").onpointerover = () => {
+        document.getElementById ("plane").src = "img/interactive4.png"
+    }
+    document.getElementById ("plane").onpointerout = () => {
+        document.getElementById ("plane").src = "img/icon4final.png"
+    }
+
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "img/PropPlaneStart.mp3"
+
+    document.getElementById ("plane").onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const wave_element = document.getElementById ("bird")
+    document.getElementById ("bird").onpointerover = () => {
+        document.getElementById ("bird").src = "img/interactive5.png"
+    }
+    document.getElementById ("train").onpointerout = () => {
+        document.getElementById ("train").src = "img/icon5final.png"
+    }
+
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "img/PropPlaneStart.mp3"
+
+    document.getElementById ("bird").onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const wave_element = document.getElementById ("ship")
+    document.getElementById ("ship").onpointerover = () => {
+        document.getElementById ("ship").src = "img/interactive6.png"
+    }
+    document.getElementById ("ship").onpointerout = () => {
+        document.getElementById ("ship").src = "img/icon6final.png"
+    }
+
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "img/PropPlaneStart.mp3"
+
+    document.getElementById ("ship").onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const wave_element = document.getElementById ("throwing")
+    document.getElementById ("throwing").onpointerover = () => {
+        document.getElementById ("throwing").src = "img/interactive7.png"
+    }
+    document.getElementById ("throwing").onpointerout = () => {
+        document.getElementById ("throwing").src = "img/icon7final.png"
+    }
+
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "img/PropPlaneStart.mp3"
+
+    document.getElementById ("throwing").onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const wave_element = document.getElementById ("kicking")
+    document.getElementById ("kicking").onpointerover = () => {
+        document.getElementById ("kicking").src = "img/interactive8.png"
+    }
+    document.getElementById ("kicking").onpointerout = () => {
+        document.getElementById ("kicking").src = "img/icon8final.png"
+    }
+
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "img/PropPlaneStart.mp3"
+
+    document.getElementById ("kicking").onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const wave_element = document.getElementById ("tank")
+    document.getElementById ("tank").onpointerover = () => {
+        document.getElementById ("tank").src = "img/interactive9.png"
+    }
+    document.getElementById ("tank").onpointerout = () => {
+        document.getElementById ("tank").src = "img/icon9final.png"
+    }
+
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "img/PropPlaneStart.mp3"
+
+    document.getElementById ("tank").onpointerdown = () => {
         slide_sound.play ()
     }
 </script>
