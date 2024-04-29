@@ -49,13 +49,6 @@
     document.getElementById ("wave").onpointerout = () => {
         document.getElementById ("wave").src = "img/icon1final.png"
     }
-
-    const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/iconsfx1.mp3"
-
-    wave_element.onpointerdown = () => {
-        slide_sound.play ()
-    }
 </script>
 
 <script>
@@ -95,6 +88,13 @@
     }
     document.getElementById ("bird").onpointerout = () => {
         document.getElementById ("bird").src = "img/icon5final.png"
+    }
+
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "img/iconsfx5.mp3"
+
+    document.getElementById ("bird").onpointerdown = () => {
+        slide_sound.play ()
     }
 </script>
 
