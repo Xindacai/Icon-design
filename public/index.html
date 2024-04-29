@@ -42,7 +42,7 @@
 
 
 <script>
-    //const wave_element = document.getElementById ("wave")
+    const wave_element = document.getElementById ("wave")
     document.getElementById ("wave").onpointerover = () => {
         document.getElementById ("wave").src = "img/interactive1.png"
     }
@@ -54,12 +54,12 @@
     slide_sound.src = "img/iconsfx1.mp3"
 
     wave_element.onpointerdown = () => {
-        slide_sound.play ()//
+        slide_sound.play ()
     }
 </script>
 
 <script>
-    //const train_element = document.getElementById ("train")
+    const train_element = document.getElementById ("train")
     document.getElementById ("train").onpointerover = () => {
         document.getElementById ("train").src = "img/interactive2.png"
     }
@@ -71,12 +71,12 @@
     slide_sound.src = "img/iconsfx2.mp3"
 
     train_element.onpointerdown = () => {
-        slide_sound.play ()//
+        slide_sound.play ()
     }
 </script>
 
 <script>
-    //const bike_element = document.getElementById ("bike")
+    const bike_element = document.getElementById ("bike")
     document.getElementById ("bike").onpointerover = () => {
         document.getElementById ("bike").src = "img/interactive3.png"
     }
@@ -85,11 +85,11 @@
     }
 
     const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/iconsfx3.mp3"//
+    slide_sound.src = "img/iconsfx3.mp3"
 
     bike_element.onpointerdown = () => {
         slide_sound.play ()
-    }//
+    }
 </script>
 
 <script>
