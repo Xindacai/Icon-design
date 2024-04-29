@@ -19,9 +19,9 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img id="wave" src="img/icon1final.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="train" src="img/icon2final.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="bike" src="img/icon3final.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="wave" src="img/icon1final.png" height="200" width="200" onclick="playSound(img/iconsfx1.mp3','1','92')"/></div>
+            <div class="image-container"><img id="train" src="img/icon2final.png" height="200" width="200" onclick="playSound(img/iconsfx2.mp3','2','93')"/></div>
+            <div class="image-container"><img id="bike" src="img/icon3final.png" height="200" width="200" onclick="playSound(img/iconsfx3.mp3','3','91')"/></div>
         </div>
 
         <div class="row">
@@ -49,13 +49,6 @@
     document.getElementById ("wave").onpointerout = () => {
         document.getElementById ("wave").src = "img/icon1final.png"
     }
-
-    const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/iconsfx1.mp3"
-
-    wave_element.onpointerdown = () => {
-        slide_sound.play ()
-    }
 </script>
 
 <script>
@@ -65,13 +58,6 @@
     }
     document.getElementById ("train").onpointerout = () => {
         document.getElementById ("train").src = "img/icon2final.png"
-    }
-
-    const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/iconsfx2.mp3"
-
-    train_element.onpointerdown = () => {
-        slide_sound.play ()
     }
 </script>
 
