@@ -42,7 +42,7 @@
 
 
 <script>
-// Create the slide_sound audio element
+   // Create the slide_sound audio element
 const slide_sound = document.createElement("audio");
 
 // Set the source of the slide_sound audio element
@@ -62,24 +62,31 @@ wave_element.onpointerout = () => {
 // Add event handler to play slide_sound when wave_element is clicked
 wave_element.onpointerdown = () => {
     slide_sound.play();
-};   
+};
 </script>
 
 <script>
-    const train_element = document.getElementById ("train")
-    document.getElementById ("train").onpointerover = () => {
-        document.getElementById ("train").src = "img/interactive2.png"
-    }
-    document.getElementById ("train").onpointerout = () => {
-        document.getElementById ("train").src = "img/icon2final.png"
-    }
+    // Create the slide_sound audio element
+const slide_sound = document.createElement("audio");
 
-    //const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/iconsfx2.mp3"
+// Set the source of the slide_sound audio element
+slide_sound.src = "img/iconsfx2.mp3";
 
-    train_element.onpointerdown = () => {
-        slide_sound.play ()
-    }//
+// Access the wave_element and define event handlers
+const wave_element = document.getElementById("wave");
+
+train_element.onpointerover = () => {
+    train_element.src = "img/interactive2.png";
+};
+
+train_element.onpointerout = () => {
+    train_element.src = "img/icon2final.png";
+};
+
+// Add event handler to play slide_sound when wave_element is clicked
+train_element.onpointerdown = () => {
+    slide_sound.play();
+};
 </script>
 
 <script>
