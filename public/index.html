@@ -41,255 +41,157 @@
 </html>
 
 
-<script>
-   {
-    // Create slide_sound audio element
-    window.slide_sound = document.createElement("audio");
-    // Set the source of the slide_sound audio element
-    window.slide_sound.src = "img/iconsfx1.mp3";
+// Function to create and return a new slide_sound object with the specified audio source
+function createSlideSound(src) {
+    const slide_sound = document.createElement("audio");
+    slide_sound.src = src;
+    return slide_sound;
 }
 
 // Access the wave_element and define event handlers
 const wave_element = document.getElementById("wave");
+const slide_sound1 = createSlideSound("img/iconsfx1.mp3");
 
 wave_element.onpointerover = () => {
     wave_element.src = "img/interactive1.png";
 };
-
 wave_element.onpointerout = () => {
     wave_element.src = "img/icon1final.png";
 };
-
-// Add event handler to play slide_sound when wave_element is clicked
 wave_element.onpointerdown = () => {
-    // Ensure slide_sound is defined before playing
-    if (window.slide_sound) {
-        window.slide_sound.play();
-    }
+    slide_sound1.play();
 };
-</script>
 
-<script>
-    {
-    // Create slide_sound audio element
-    window.slide_sound = document.createElement("audio");
-    // Set the source of the slide_sound audio element
-    window.slide_sound.src = "img/iconsfx2.mp3";
-}
-
-// Access the train_element and define event handlers
+// Repeat the above code for each image, creating a new slide_sound object for each image
+// Example:
 const train_element = document.getElementById("train");
+const slide_sound2 = createSlideSound("img/iconsfx2.mp3");
 
 train_element.onpointerover = () => {
     train_element.src = "img/interactive2.png";
 };
-
 train_element.onpointerout = () => {
     train_element.src = "img/icon2final.png";
 };
-
-// Add event handler to play slide_sound when train_element is clicked
 train_element.onpointerdown = () => {
-    // Ensure slide_sound is defined before playing
-    if (window.slide_sound) {
-        window.slide_sound.play();
-    }
+    slide_sound2.play();
 };
-</script>
-
-<script>
-{
-    // Create slide_sound audio element
-    window.slide_sound = document.createElement("audio");
-    // Set the source of the slide_sound audio element
-    window.slide_sound.src = "img/iconsfx3.mp3";
-}
-
 // Access the bike_element and define event handlers
 const bike_element = document.getElementById("bike");
+const slide_sound3 = createSlideSound("img/iconsfx3.mp3");
 
 bike_element.onpointerover = () => {
     bike_element.src = "img/interactive3.png";
 };
-
 bike_element.onpointerout = () => {
     bike_element.src = "img/icon3final.png";
 };
-
-// Add event handler to play slide_sound when bike_element is clicked
 bike_element.onpointerdown = () => {
-    // Ensure slide_sound is defined before playing
-    if (window.slide_sound) {
-        window.slide_sound.play();
-    }
+    slide_sound3.play();
 };
-</script>
 
-<script>
-    {
-    // Create slide_sound audio element
-    window.slide_sound = document.createElement("audio");
-    // Set the source of the slide_sound audio element
-    window.slide_sound.src = "img/iconsfx4.mp3";
-}
-
-// Access the plane_element and define event handlers
+// Repeat the above code block for each additional image
+// Example:
 const plane_element = document.getElementById("plane");
+const slide_sound4 = createSlideSound("img/iconsfx4.mp3");
 
 plane_element.onpointerover = () => {
     plane_element.src = "img/interactive4.png";
 };
-
 plane_element.onpointerout = () => {
     plane_element.src = "img/icon4final.png";
 };
-
-// Add event handler to play slide_sound when plane_element is clicked
 plane_element.onpointerdown = () => {
-    // Ensure slide_sound is defined before playing
-    if (window.slide_sound) {
-        window.slide_sound.play();
-    }
+    slide_sound4.play();
 };
-</script>
 
-<script>
-    {
-    // Create slide_sound audio element
-    window.slide_sound = document.createElement("audio");
-    // Set the source of the slide_sound audio element
-    window.slide_sound.src = "img/iconsfx5.mp3";
-}
-
+// Repeat the pattern for each image element you have
 // Access the bird_element and define event handlers
 const bird_element = document.getElementById("bird");
+const slide_sound5 = createSlideSound("img/iconsfx5.mp3");
 
 bird_element.onpointerover = () => {
     bird_element.src = "img/interactive5.png";
 };
-
 bird_element.onpointerout = () => {
     bird_element.src = "img/icon5final.png";
 };
-
-// Add event handler to play slide_sound when bird_element is clicked
 bird_element.onpointerdown = () => {
-    // Ensure slide_sound is defined before playing
-    if (window.slide_sound) {
-        window.slide_sound.play();
-    }
+    slide_sound5.play();
 };
-</script>
-
-<script>
-    {
-    // Create slide_sound audio element
-    window.slide_sound = document.createElement("audio");
-    // Set the source of the slide_sound audio element
-    window.slide_sound.src = "img/iconsfx6.mp3";
-}
 
 // Access the ship_element and define event handlers
 const ship_element = document.getElementById("ship");
+const slide_sound6 = createSlideSound("img/iconsfx6.mp3");
 
 ship_element.onpointerover = () => {
     ship_element.src = "img/interactive6.png";
 };
-
 ship_element.onpointerout = () => {
     ship_element.src = "img/icon6final.png";
 };
-
-// Add event handler to play slide_sound when ship_element is clicked
 ship_element.onpointerdown = () => {
-    // Ensure slide_sound is defined before playing
-    if (window.slide_sound) {
-        window.slide_sound.play();
-    }
+    slide_sound6.play();
 };
-</script>
 
-<script>
- {
-    // Create slide_sound audio element
-    window.slide_sound = document.createElement("audio");
-    // Set the source of the slide_sound audio element
-    window.slide_sound.src = "img/iconsfx7.mp3";
-}
-
-// Access the throwing_element and define event handlers
+// Repeat the above pattern for each additional image
+// Example:
 const throwing_element = document.getElementById("throwing");
+const slide_sound7 = createSlideSound("img/iconsfx7.mp3");
 
 throwing_element.onpointerover = () => {
     throwing_element.src = "img/interactive7.png";
 };
-
 throwing_element.onpointerout = () => {
     throwing_element.src = "img/icon7final.png";
 };
-
-// Add event handler to play slide_sound when throwing_element is clicked
 throwing_element.onpointerdown = () => {
-    // Ensure slide_sound is defined before playing
-    if (window.slide_sound) {
-        window.slide_sound.play();
-    }
+    slide_sound7.play();
 };
-</script>
 
-<script>
-   {
-    // Create slide_sound audio element
-    window.slide_sound = document.createElement("audio");
-    // Set the source of the slide_sound audio element
-    window.slide_sound.src = "img/iconsfx8.mp3";
-}
-
+// Repeat the pattern for each image element you have
+YUREI — Today at 01:03
 // Access the kicking_element and define event handlers
 const kicking_element = document.getElementById("kicking");
+const slide_sound8 = createSlideSound("img/iconsfx8.mp3");
 
 kicking_element.onpointerover = () => {
     kicking_element.src = "img/interactive8.png";
 };
-
 kicking_element.onpointerout = () => {
     kicking_element.src = "img/icon8final.png";
 };
-
-// Add event handler to play slide_sound when kicking_element is clicked
 kicking_element.onpointerdown = () => {
-    // Ensure slide_sound is defined before playing
-    if (window.slide_sound) {
-        window.slide_sound.play();
-    }
+    slide_sound8.play();
 };
-</script>
-
-<script>
-    {
-    // Create slide_sound audio element
-    window.slide_sound = document.createElement("audio");
-    // Set the source of the slide_sound audio element
-    window.slide_sound.src = "img/iconsfx9.mp3";
-}
 
 // Access the tank_element and define event handlers
 const tank_element = document.getElementById("tank");
+const slide_sound9 = createSlideSound("img/iconsfx9.mp3");
 
 tank_element.onpointerover = () => {
     tank_element.src = "img/interactive9.png";
 };
-
 tank_element.onpointerout = () => {
     tank_element.src = "img/icon9final.png";
 };
-
-// Add event handler to play slide_sound when tank_element is clicked
 tank_element.onpointerdown = () => {
-    // Ensure slide_sound is defined before playing
-    if (window.slide_sound) {
-        window.slide_sound.play();
-    }
+    slide_sound9.play();
 };
-</script>
 
+// Repeat the above pattern for each additional image
+// Example:
+const jumping_element = document.getElementById("jumping");
+const slide_sound10 = createSlideSound("img/iconsfx10.mp3");
+
+jumping_element.onpointerover = () => {
+    jumping_element.src = "img/interactive10.png";
+};
+jumping_element.onpointerout = () => {
+    jumping_element.src = "img/icon10final.png";
+};
+jumping_element.onpointerdown = () => {
+    slide_sound10.play();
+};
+
+// Repeat the pattern for each image element you have
