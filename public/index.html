@@ -41,41 +41,11 @@
 </html>
 
 <script>
-const wave= document.getElementById ("wave_id")
-console.dir (wave)
-
-    const slide_sound = document.createElement ("audio")
-    slide_sound.src = "sounds/rail_slide.mp3"
-    
-    const wave_element = document.getElementById ("circle_id")
-    wave.onpointerover = (img/icon1final.png) => (img/interactive1.png)
-        wave.src = (img/interactive1.png)
-    
-    wave.onpointerout = (img/interactive1.png) => {img/icon1final.png
-        wave.src = "img/icon1final.png"
-    }
-    wave.onpointerdown = (PropPlaneStart.mp3) => {
-        slide_sound.play (PropPlaneStart.mp3)
-    }
-</script>
-
-<script>
-    const slide_sound = document.createElement ("audio")
-    slide_sound.src = "sounds/rail_slide.mp3"
-    
-    const wave_element = document.getElementById ("wave_id")
-    wave_element.onpointerover = (img/icon1final) => {
-        wave_element.src = "img/interactive9.png"
-    }
-    wave_element.onpointerout = (interactive9.png) => {
+    const wave_element = document.getElementById ("wave")
+    wave_element.onpointerover = () => {
         wave_element.src = "img/interactive1.png"
     }
-    wave_element.onpointerdown = () => {
-        slide_sound.play ()
+    wave_element.onpointerout = () => {
+        wave_element.src = "img/icon1final.png"
     }
 </script>
-    circle_element.onpointerdown = () => {
-        circle_element.src = "img/hex.png"
-        slide_sound.play ()
-        setTimeout (() => { circle_element.src = "img/cir.png" }, 2000)
-    }
