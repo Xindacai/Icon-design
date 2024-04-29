@@ -42,20 +42,27 @@
 
 
 <script>
-    const wave_element = document.getElementById ("wave")
-    document.getElementById ("wave").onpointerover = () => {
-        document.getElementById ("wave").src = "img/interactive1.png"
-    }
-    document.getElementById ("wave").onpointerout = () => {
-        document.getElementById ("wave").src = "img/icon1final.png"
-    }
+// Create the slide_sound audio element
+const slide_sound = document.createElement("audio");
 
-    //const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/iconsfx1.mp3"
+// Set the source of the slide_sound audio element
+slide_sound.src = "img/iconsfx1.mp3";
 
-    wave_element.onpointerdown = () => {
-        slide_sound.play ()
-    }//
+// Access the wave_element and define event handlers
+const wave_element = document.getElementById("wave");
+
+wave_element.onpointerover = () => {
+    wave_element.src = "img/interactive1.png";
+};
+
+wave_element.onpointerout = () => {
+    wave_element.src = "img/icon1final.png";
+};
+
+// Add event handler to play slide_sound when wave_element is clicked
+wave_element.onpointerdown = () => {
+    slide_sound.play();
+};   
 </script>
 
 <script>
