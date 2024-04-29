@@ -42,191 +42,192 @@
 
 
 <script>
-   {
-    slide_sound = document.createElement("audio")
-    slide_sound.src = "img/iconsfx1.mp3"
-}
+// Wrap each script block in an IIFE to create a local scope
+(function() {
+    const slide_sound = document.createElement("audio");
+    slide_sound.src = "img/iconsfx1.mp3";
 
-const wave_element = document.getElementById("wave")
+    const wave_element = document.getElementById("wave");
 
-wave_element.onpointerover = () => {
-    wave_element.src = "img/interactive1.png";
-}
+    wave_element.onpointerover = () => {
+        wave_element.src = "img/interactive1.png";
+    };
 
-wave_element.onpointerout = () => {
-    wave_element.src = "img/icon1final.png";
-}
+    wave_element.onpointerout = () => {
+        wave_element.src = "img/icon1final.png";
+    };
 
-wave_element.onpointerdown = () => {
-        slide_sound.play()
-}
-</script>
-
-<script>
-    {
-    slide_sound = document.createElement("audio")
-    slide_sound.src = "img/iconsfx2.mp3"
-}
-
-const train_element = document.getElementById("train");
-
-train_element.onpointerover = () => {
-    train_element.src = "img/interactive2.png"
-}
-
-train_element.onpointerout = () => {
-    train_element.src = "img/icon2final.png"
-}
-
-train_element.onpointerdown = () => {
+    wave_element.onpointerdown = () => {
         slide_sound.play();
-    }
+    };
+})();    
 </script>
 
 <script>
-{
-    slide_sound = document.createElement("audio")
-    slide_sound.src = "img/iconsfx3.mp3"
-}
+(function() {
+    const slide_sound = document.createElement("audio");
+    slide_sound.src = "img/iconsfx2.mp3";
 
-const bike_element = document.getElementById("bike")
+    const train_element = document.getElementById("train");
 
-bike_element.onpointerover = () => {
-    bike_element.src = "img/interactive3.png"
-}
+    train_element.onpointerover = () => {
+        train_element.src = "img/interactive2.png";
+    };
 
-bike_element.onpointerout = () => {
-    bike_element.src = "img/icon3final.png"
-}
+    train_element.onpointerout = () => {
+        train_element.src = "img/icon2final.png";
+    };
 
-bike_element.onpointerdown = () => {
-        slide_sound.play()
-    }
+    train_element.onpointerdown = () => {
+        slide_sound.play();
+    };
+})();    
 </script>
 
 <script>
-    {
-    slide_sound = document.createElement("audio")
-    slide_sound.src = "img/iconsfx4.mp3"
-}
+(function() {
+    const slide_sound = document.createElement("audio");
+    slide_sound.src = "img/iconsfx3.mp3";
 
-const plane_element = document.getElementById("plane")
+    const bike_element = document.getElementById("bike");
 
-plane_element.onpointerover = () => {
-    plane_element.src = "img/interactive4.png"
-}
+    bike_element.onpointerover = () => {
+        bike_element.src = "img/interactive3.png";
+    };
 
-plane_element.onpointerout = () => {
-    plane_element.src = "img/icon4final.png"
-}
+    bike_element.onpointerout = () => {
+        bike_element.src = "img/icon3final.png";
+    };
 
-plane_element.onpointerdown = () => {
-        slide_sound.play()
-    }
+    bike_element.onpointerdown = () => {
+        slide_sound.play();
+    };
+})();
 </script>
 
 <script>
-    {
-    slide_sound = document.createElement("audio")
-    slide_sound.src = "img/iconsfx5.mp3"
-}
+   (function() {
+    const slide_sound = document.createElement("audio");
+    slide_sound.src = "img/iconsfx4.mp3";
 
-const bird_element = document.getElementById("bird")
+    const plane_element = document.getElementById("plane");
 
-bird_element.onpointerover = () => {
-    bird_element.src = "img/interactive5.png"
-}
+    plane_element.onpointerover = () => {
+        plane_element.src = "img/interactive4.png";
+    };
 
-bird_element.onpointerout = () => {
-    bird_element.src = "img/icon5final.png"
-}
+    plane_element.onpointerout = () => {
+        plane_element.src = "img/icon4final.png";
+    };
 
-bird_element.onpointerdown = () => {
-        slide_sound.play()
-}
+    plane_element.onpointerdown = () => {
+        slide_sound.play();
+    };
+})();
 </script>
 
 <script>
-    {
-    slide_sound = document.createElement("audio")
-    slide_sound.src = "img/iconsfx6.mp3"
-}
+       (function() {
+    const slide_sound = document.createElement("audio");
+    slide_sound.src = "img/iconsfx5.mp3";
 
-const ship_element = document.getElementById("ship")
+    const bird_element = document.getElementById("bird");
 
-ship_element.onpointerover = () => {
-    ship_element.src = "img/interactive6.png"
-}
+    bird_element.onpointerover = () => {
+        bird_element.src = "img/interactive5.png";
+    };
 
-ship_element.onpointerout = () => {
-    ship_element.src = "img/icon6final.png"
-}
+    bird_element.onpointerout = () => {
+        bird_element.src = "img/icon5final.png";
+    };
 
-ship_element.onpointerdown = () => {
-    slide_sound.play()
-}
+    bird_element.onpointerdown = () => {
+        slide_sound.play();
+    };
+})();
 </script>
 
 <script>
- {
-    slide_sound = document.createElement("audio")
-    slide_sound.src = "img/iconsfx7.mp3"
-}
+   (function() {
+    const slide_sound = document.createElement("audio");
+    slide_sound.src = "img/iconsfx6.mp3";
 
-const throwing_element = document.getElementById("throwing")
+    const ship_element = document.getElementById("ship");
 
-throwing_element.onpointerover = () => {
-    throwing_element.src = "img/interactive7.png"
-}
+    ship_element.onpointerover = () => {
+        ship_element.src = "img/interactive6.png";
+    };
 
-throwing_element.onpointerout = () => {
-    throwing_element.src = "img/icon7final.png"
-}
+    ship_element.onpointerout = () => {
+        ship_element.src = "img/icon6final.png";
+    };
 
-throwing_element.onpointerdown = () => {
-        slide_sound.play()
-    }
+    ship_element.onpointerdown = () => {
+        slide_sound.play();
+    };
+})();
 </script>
 
 <script>
-   {
-    slide_sound = document.createElement("audio")
-    slide_sound.src = "img/iconsfx8.mp3"
-}
+    (function() {
+    const slide_sound = document.createElement("audio");
+    slide_sound.src = "img/iconsfx7.mp3";
 
-const kicking_element = document.getElementById("kicking")
+    const throwing_element = document.getElementById("throwing");
 
-kicking_element.onpointerover = () => {
-    kicking_element.src = "img/interactive8.png"
-}
+    throwing_element.onpointerover = () => {
+        throwing_element.src = "img/interactive7.png";
+    };
 
-kicking_element.onpointerout = () => {
-    kicking_element.src = "img/icon8final.png"
-}
+    throwing_element.onpointerout = () => {
+        throwing_element.src = "img/icon7final.png";
+    };
 
-kicking_element.onpointerdown = () => {
-        slide_sound.play()
-    }
+    throwing_element.onpointerdown = () => {
+        slide_sound.play();
+    };
+})();
 </script>
 
 <script>
-    {
-    slide_sound = document.createElement("audio")
-    slide_sound.src = "img/iconsfx9.mp3"
-}
+       (function() {
+    const slide_sound = document.createElement("audio");
+    slide_sound.src = "img/iconsfx8.mp3";
 
-const tank_element = document.getElementById("tank")
+    const kicking_element = document.getElementById("kicking");
 
-tank_element.onpointerover = () => {
-    tank_element.src = "img/interactive9.png"
-}
+    kicking_element.onpointerover = () => {
+        kicking_element.src = "img/interactive8.png";
+    };
 
-tank_element.onpointerout = () => {
-    tank_element.src = "img/icon9final.png"
-}
+    kicking_element.onpointerout = () => {
+        kicking_element.src = "img/icon8final.png";
+    };
 
-tank_element.onpointerdown = () => {
-        slide_sound.play()
-    }
+    kicking_element.onpointerdown = () => {
+        slide_sound.play();
+    };
+})();
+</script>
+
+<script>
+        (function() {
+    const slide_sound = document.createElement("audio");
+    slide_sound.src = "img/iconsfx9.mp3";
+
+    const tank_element = document.getElementById("tank");
+
+    tank_element.onpointerover = () => {
+        tank_element.src = "img/interactive9.png";
+    };
+
+    tank_element.onpointerout = () => {
+        tank_element.src = "img/icon9final.png";
+    };
+
+    tank_element.onpointerdown = () => {
+        slide_sound.play();
+    };
+})();
 </script>
 
