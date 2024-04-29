@@ -49,4 +49,10 @@
     document.getElementById ("wave").onpointerout = () => {
         document.getElementById ("wave").src = "img/icon1final.png"
     }
+
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "sounds/rail_slide.mp3"
+
+    document.getElementById ("wave").onpointerdown = () => {
+        slide_sound.play ()
 </script>
