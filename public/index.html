@@ -178,20 +178,3 @@ tank_element.onpointerout = () => {
 tank_element.onpointerdown = () => {
     slide_sound9.play();
 };
-
-// Repeat the above pattern for each additional image
-// Example:
-const jumping_element = document.getElementById("jumping");
-const slide_sound10 = createSlideSound("img/iconsfx10.mp3");
-
-jumping_element.onpointerover = () => {
-    jumping_element.src = "img/interactive10.png";
-};
-jumping_element.onpointerout = () => {
-    jumping_element.src = "img/icon10final.png";
-};
-jumping_element.onpointerdown = () => {
-    slide_sound10.play();
-};
-
-// Repeat the pattern for each image element you have
