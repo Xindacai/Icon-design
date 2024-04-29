@@ -56,3 +56,19 @@
         slide_sound.play ()
     }
 </script>
+
+<script>
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "img/iconsfx2.mp3"
+    
+    const train = document.getElementById ("wave")
+    train_element.onpointerover = () => {
+        train_element.src = "img/interactive2.png"
+    }
+    train.onpointerout = () => {
+        train.src = "img/icon2final.png"
+    }
+    train.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
