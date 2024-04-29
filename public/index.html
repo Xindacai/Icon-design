@@ -42,11 +42,13 @@
 
 
 <script>
-   // Create the slide_sound audio element
-const slide_sound = document.createElement("audio");
-
-// Set the source of the slide_sound audio element
-slide_sound.src = "img/iconsfx1.mp3";
+   // Check if slide_sound is already defined, if not, create it
+if (!window.slide_sound) {
+    // Create the slide_sound audio element
+    window.slide_sound = document.createElement("audio");
+    // Set the source of the slide_sound audio element
+    window.slide_sound.src = "img/iconsfx1.mp3";
+}
 
 // Access the wave_element and define event handlers
 const wave_element = document.getElementById("wave");
@@ -61,19 +63,24 @@ wave_element.onpointerout = () => {
 
 // Add event handler to play slide_sound when wave_element is clicked
 wave_element.onpointerdown = () => {
-    slide_sound.play();
+    // Ensure slide_sound is defined before playing
+    if (window.slide_sound) {
+        window.slide_sound.play();
+    }
 };
 </script>
 
 <script>
+    // Check if slide_sound is already defined, if not, create it
+if (!window.slide_sound) {
     // Create the slide_sound audio element
-const slide_sound = document.createElement("audio");
-
-// Set the source of the slide_sound audio element
-slide_sound.src = "img/iconsfx2.mp3";
+    window.slide_sound = document.createElement("audio");
+    // Set the source of the slide_sound audio element
+    window.slide_sound.src = "img/iconsfx2.mp3";
+}
 
 // Access the train_element and define event handlers
-const train = document.getElementById("train");
+const train_element = document.getElementById("train");
 
 train_element.onpointerover = () => {
     train_element.src = "img/interactive2.png";
@@ -85,16 +92,21 @@ train_element.onpointerout = () => {
 
 // Add event handler to play slide_sound when train_element is clicked
 train_element.onpointerdown = () => {
-    slide_sound.play();
+    // Ensure slide_sound is defined before playing
+    if (window.slide_sound) {
+        window.slide_sound.play();
+    }
 };
 </script>
 
 <script>
-  // Create the slide_sound audio element
-const slide_sound = document.createElement("audio");
-
-// Set the source of the slide_sound audio element
-slide_sound.src = "img/iconsfx3.mp3";
+// Check if slide_sound is already defined, if not, create it
+if (!window.slide_sound) {
+    // Create the slide_sound audio element
+    window.slide_sound = document.createElement("audio");
+    // Set the source of the slide_sound audio element
+    window.slide_sound.src = "img/iconsfx3.mp3";
+}
 
 // Access the bike_element and define event handlers
 const bike_element = document.getElementById("bike");
@@ -109,16 +121,21 @@ bike_element.onpointerout = () => {
 
 // Add event handler to play slide_sound when bike_element is clicked
 bike_element.onpointerdown = () => {
-    slide_sound.play();
+    // Ensure slide_sound is defined before playing
+    if (window.slide_sound) {
+        window.slide_sound.play();
+    }
 };
 </script>
 
 <script>
+    // Check if slide_sound is already defined, if not, create it
+if (!window.slide_sound) {
     // Create the slide_sound audio element
-const slide_sound = document.createElement("audio");
-
-// Set the source of the slide_sound audio element
-slide_sound.src = "img/iconsfx4.mp3";
+    window.slide_sound = document.createElement("audio");
+    // Set the source of the slide_sound audio element
+    window.slide_sound.src = "img/iconsfx4.mp3";
+}
 
 // Access the plane_element and define event handlers
 const plane_element = document.getElementById("plane");
@@ -133,19 +150,24 @@ plane_element.onpointerout = () => {
 
 // Add event handler to play slide_sound when plane_element is clicked
 plane_element.onpointerdown = () => {
-    slide_sound.play();
+    // Ensure slide_sound is defined before playing
+    if (window.slide_sound) {
+        window.slide_sound.play();
+    }
 };
 </script>
 
 <script>
+    // Check if slide_sound is already defined, if not, create it
+if (!window.slide_sound) {
     // Create the slide_sound audio element
-const slide_sound = document.createElement("audio");
-
-// Set the source of the slide_sound audio element
-slide_sound.src = "img/iconsfx5.mp3";
+    window.slide_sound = document.createElement("audio");
+    // Set the source of the slide_sound audio element
+    window.slide_sound.src = "img/iconsfx5.mp3";
+}
 
 // Access the bird_element and define event handlers
-const bird = document.getElementById("bird");
+const bird_element = document.getElementById("bird");
 
 bird_element.onpointerover = () => {
     bird_element.src = "img/interactive5.png";
@@ -157,16 +179,21 @@ bird_element.onpointerout = () => {
 
 // Add event handler to play slide_sound when bird_element is clicked
 bird_element.onpointerdown = () => {
-    slide_sound.play();
+    // Ensure slide_sound is defined before playing
+    if (window.slide_sound) {
+        window.slide_sound.play();
+    }
 };
 </script>
 
 <script>
+    // Check if slide_sound is already defined, if not, create it
+if (!window.slide_sound) {
     // Create the slide_sound audio element
-const slide_sound = document.createElement("audio");
-
-// Set the source of the slide_sound audio element
-slide_sound.src = "img/iconsfx6.mp3";
+    window.slide_sound = document.createElement("audio");
+    // Set the source of the slide_sound audio element
+    window.slide_sound.src = "img/iconsfx6.mp3";
+}
 
 // Access the ship_element and define event handlers
 const ship_element = document.getElementById("ship");
@@ -181,16 +208,21 @@ ship_element.onpointerout = () => {
 
 // Add event handler to play slide_sound when ship_element is clicked
 ship_element.onpointerdown = () => {
-    slide_sound.play();
+    // Ensure slide_sound is defined before playing
+    if (window.slide_sound) {
+        window.slide_sound.play();
+    }
 };
 </script>
 
 <script>
+ // Check if slide_sound is already defined, if not, create it
+if (!window.slide_sound) {
     // Create the slide_sound audio element
-const slide_sound = document.createElement("audio");
-
-// Set the source of the slide_sound audio element
-slide_sound.src = "img/iconsfx7.mp3";
+    window.slide_sound = document.createElement("audio");
+    // Set the source of the slide_sound audio element
+    window.slide_sound.src = "img/iconsfx7.mp3";
+}
 
 // Access the throwing_element and define event handlers
 const throwing_element = document.getElementById("throwing");
@@ -205,16 +237,21 @@ throwing_element.onpointerout = () => {
 
 // Add event handler to play slide_sound when throwing_element is clicked
 throwing_element.onpointerdown = () => {
-    slide_sound.play();
+    // Ensure slide_sound is defined before playing
+    if (window.slide_sound) {
+        window.slide_sound.play();
+    }
 };
 </script>
 
 <script>
+   // Check if slide_sound is already defined, if not, create it
+if (!window.slide_sound) {
     // Create the slide_sound audio element
-const slide_sound = document.createElement("audio");
-
-// Set the source of the slide_sound audio element
-slide_sound.src = "img/iconsfx8.mp3";
+    window.slide_sound = document.createElement("audio");
+    // Set the source of the slide_sound audio element
+    window.slide_sound.src = "img/iconsfx8.mp3";
+}
 
 // Access the kicking_element and define event handlers
 const kicking_element = document.getElementById("kicking");
@@ -229,16 +266,21 @@ kicking_element.onpointerout = () => {
 
 // Add event handler to play slide_sound when kicking_element is clicked
 kicking_element.onpointerdown = () => {
-    slide_sound.play();
+    // Ensure slide_sound is defined before playing
+    if (window.slide_sound) {
+        window.slide_sound.play();
+    }
 };
 </script>
 
 <script>
+    // Check if slide_sound is already defined, if not, create it
+if (!window.slide_sound) {
     // Create the slide_sound audio element
-const slide_sound = document.createElement("audio");
-
-// Set the source of the slide_sound audio element
-slide_sound.src = "img/iconsfx9.mp3";
+    window.slide_sound = document.createElement("audio");
+    // Set the source of the slide_sound audio element
+    window.slide_sound.src = "img/iconsfx9.mp3";
+}
 
 // Access the tank_element and define event handlers
 const tank_element = document.getElementById("tank");
@@ -252,8 +294,11 @@ tank_element.onpointerout = () => {
 };
 
 // Add event handler to play slide_sound when tank_element is clicked
-tank_element.onpointerdown = () => {
-    slide_sound.play();
+tank0_element.onpointerdown = () => {
+    // Ensure slide_sound is defined before playing
+    if (window.slide_sound) {
+        window.slide_sound.play();
+    }
 };
 </script>
 
