@@ -216,9 +216,8 @@ ship_element.onpointerdown = () => {
 </script>
 
 <script>
- // Check if slide_sound is already defined, if not, create it
-if (!window.slide_sound) {
-    // Create the slide_sound audio element
+ {
+    // Create slide_sound audio element
     window.slide_sound = document.createElement("audio");
     // Set the source of the slide_sound audio element
     window.slide_sound.src = "img/iconsfx7.mp3";
